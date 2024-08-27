@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - [Author Name]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="account-dropdown">
+                    <a href="#" class="account-link">Account</a>
+                    <ul class="dropdown-content">
+                        <li><a href="settings.html">Settings</a></li>
+                        <li><a href="logout.html">Logout</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="settings">
+            <h1>Account Settings</h1>
+
+            <!-- Personal Information -->
+            <div class="settings-section">
+                <h2>Personal Information</h2>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Your username">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address">
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="New password">
+                    
+                    <button type="submit">Save Changes</button>
+                </form>
+            </div>
+
+            <!-- Book Preferences -->
+            <div class="settings-section">
+                <h2>Book Preferences</h2>
+                <form>
+                    <label for="favorite-genre">Favorite Genre:</label>
+                    <select id="favorite-genre" name="favorite-genre">
+                        <option value="fiction">Fiction</option>
+                        <option value="non-fiction">Non-fiction</option>
+                        <option value="mystery">Mystery</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="science-fiction">Science Fiction</option>
+                        <option value="biography">Biography</option>
+                        <option value="history">History</option>
+                        <option value="romance">Romance</option>
+                    </select>
+
+                    <label for="notification-books">New Book Notifications:</label>
+                    <input type="checkbox" id="notification-books" name="notification-books">
+                    <label for="notification-books" class="inline-label">Receive notifications about new book releases</label>
+                    
+                    <button type="submit">Save Preferences</button>
+                </form>
+            </div>
+
+            <!-- Video Preferences -->
+            <div class="settings-section">
+                <h2>Video Preferences</h2>
+                <form>
+                    <label for="preferred-quality">Preferred Video Quality:</label>
+                    <select id="preferred-quality" name="preferred-quality">
+                        <option value="1080p">1080p</option>
+                        <option value="720p">720p</option>
+                        <option value="480p">480p</option>
+                        <option value="360p">360p</option>
+                    </select>
+
+                    <label for="autoplay-videos">Autoplay Videos:</label>
+                    <input type="checkbox" id="autoplay-videos" name="autoplay-videos">
+                    <label for="autoplay-videos" class="inline-label">Automatically play the next video</label>
+                    
+                    <button type="submit">Save Preferences</button>
+                </form>
+            </div>
+
+            <!-- Account Security -->
+            <div class="settings-section">
+                <h2>Account Security</h2>
+                <form>
+                    <label for="two-factor">Two-Factor Authentication:</label>
+                    <input type="checkbox" id="two-factor" name="two-factor">
+                    <label for="two-factor" class="inline-label">Enable two-factor authentication</label>
+
+                    <label for="security-question">Security Question:</label>
+                    <select id="security-question" name="security-question">
+                        <option value="pet">What was your first pet's name?</option>
+                        <option value="school">What school did you attend for sixth grade?</option>
+                        <option value="city">In what city were you born?</option>
+                    </select>
+                    <input type="text" id="security-answer" name="security-answer" placeholder="Your answer">
+                    
+                    <button type="submit">Update Security Settings</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 [Author Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
